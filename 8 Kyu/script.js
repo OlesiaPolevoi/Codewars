@@ -172,3 +172,53 @@
 // console.log(test);
 // // rps("scissors", "rock"); // Player 2 won!
 // // rps("paper", "paper"); // Draw!
+
+// //NOTE Reversed Strings - Complete the solution so that it reverses the string passed into it.
+// // 'world'  =>  'dlrow'
+// // 'word'   =>  'drow'
+
+// // function solution(str) {
+// //   let splitStr = str.split("");
+// //   console.log(splitStr);
+// //   let reverseArr = splitStr.reverse();
+// //   console.log(reverseArr);
+// //   let combineArr = reverseArr.join("");
+// //   console.log(combineArr);
+// // }
+// // //combined version
+// // function solution(str) {
+// //   return str.split("").reverse().join("");
+// // }
+// //using for loop
+// function solution(str) {
+//   let newStr = "";
+
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     newStr += str[i];
+//   }
+//   return newStr;
+// }
+
+// let test = solution("world");
+// console.log(test);
+
+// //NOTE
+
+// // Are You Playing Banjo? Create a function which answers the question "Are you playing banjo?".// If your name starts with the letter "R" or lower case "r", you are playing banjo!
+// // The function takes a name as its only argument, and returns one of the following strings: name + " plays banjo"
+// // name + " does not play banjo"
+
+// function areYouPlayingBanjo(name) {
+//   let nameLowerCase = name.toLowerCase();
+//   if (nameLowerCase[0] === "r") {
+//     return name + " plays banjo";
+//   } else {
+//     return name + " does not play banjo";
+//   }
+// }
+
+// let test = areYouPlayingBanjo("Bravo");
+// //"bravo does not play banjo");
+// console.log(test);
+// let test1 = areYouPlayingBanjo("rolf");
+// console.log(test1);
