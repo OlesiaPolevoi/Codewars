@@ -244,24 +244,63 @@
 // console.log(test);
 // console.log(typeof test);
 
-//NOTE Sum Mixed Array
-//Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
+// //NOTE Sum Mixed Array
+// //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
 
-function sumMix(x) {
-  console.log(x);
-  //array values to num
-  //return sum as number
-  let sum = 0;
-  x.forEach((e) => {
-    sum += +e;
-  });
-  return sum;
-}
+// function sumMix(x) {
+//   console.log(x);
+//   //array values to num
+//   //return sum as number
+//   let sum = 0;
+//   x.forEach((e) => {
+//     sum += +e;
+//   });
+//   return sum;
+// }
 
-const test = sumMix([9, 3, "7", "3"]);
-//22
+// const test = sumMix([9, 3, "7", "3"]);
+// //22
+// console.log(test);
+
+// const test2 = sumMix(["3", 6, 6, 0, "5", 8, 5, "6", 2, "0"]);
+// // 41;
+// console.log(test2);
+
+//NOTE // Find Maximum and Minimum Values of a List
+
+var min = function (list) {
+  let min = list[0];
+
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] < min) {
+      min = list[i];
+    }
+  }
+  return min;
+};
+
+var max = function (list) {
+  let max = list[0];
+
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] > max) {
+      max = list[i];
+    }
+  }
+  return max;
+};
+
+let test = min([-52, 56, 30, 29, -54, 0, -110]);
+// -110;
 console.log(test);
+let test1 = min([42, 54, 65, 87, 0]);
+// 0);
+console.log(test1);
 
-const test2 = sumMix(["3", 6, 6, 0, "5", 8, 5, "6", 2, "0"]);
-// 41;
+let test2 = max([4, 6, 2, 1, 9, 63, -134, 566]);
+// 566);
 console.log(test2);
+
+let test3 = max([5]);
+// 5);
+console.log(test3);
