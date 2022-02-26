@@ -230,3 +230,16 @@
 // console.log(test);
 // let test1 = areYouPlayingBanjo("rolf");
 // console.log(test1);
+
+// //NOTE Convert a Number to a String!
+
+// // 123 --> "123"
+// // 999 --> "999"
+
+// function numberToString(num) {
+//   return num.toString();
+// }
+
+// let test = numberToString(67);
+// console.log(test);
+// console.log(typeof test);
