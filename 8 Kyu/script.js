@@ -243,3 +243,25 @@
 // let test = numberToString(67);
 // console.log(test);
 // console.log(typeof test);
+
+//NOTE Sum Mixed Array
+//Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
+
+function sumMix(x) {
+  console.log(x);
+  //array values to num
+  //return sum as number
+  let sum = 0;
+  x.forEach((e) => {
+    sum += +e;
+  });
+  return sum;
+}
+
+const test = sumMix([9, 3, "7", "3"]);
+//22
+console.log(test);
+
+const test2 = sumMix(["3", 6, 6, 0, "5", 8, 5, "6", 2, "0"]);
+// 41;
+console.log(test2);
